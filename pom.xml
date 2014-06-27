@@ -17,6 +17,12 @@
 		<version>1.0</version>
 	</parent>
 	
+	<scm>
+		<connection>scm:git:git://github.com/mrprez/gencross-drawer.git</connection>
+		<developerConnection>scm:git:https://github.com/mrprez/gencross-drawer.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
 	<dependencies>
 		<dependency>
 			<artifactId>gencross</artifactId>
