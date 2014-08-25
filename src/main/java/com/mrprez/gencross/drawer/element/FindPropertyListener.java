@@ -20,7 +20,7 @@ public class FindPropertyListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		String type = drawedElementDialog.getType();
+		String type = drawedElementDialog.getFieldType();
 		if(type.equals("Total de points") || type.equals("Points restant") || type.equals("Points dépensés")){
 			Personnage personnage = Drawer.getInstance().getPersonnage();
 			String pointPoolName = (String) JOptionPane.showInputDialog(drawedElementDialog, "Pool de points", "",  JOptionPane.PLAIN_MESSAGE, null, personnage.getPointPools().keySet().toArray(), personnage.getPointPools().keySet().iterator().next());
