@@ -261,7 +261,7 @@ public class DrawedElementDialog extends JDialog implements ActionListener {
 		return colorButton.getBackground();
 	}
 	
-	public String getType(){
+	public String getFieldType(){
 		return (String) fieldComboBox.getSelectedItem();
 	}
 
