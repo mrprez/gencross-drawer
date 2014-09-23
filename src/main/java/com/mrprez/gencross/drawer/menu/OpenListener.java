@@ -48,7 +48,7 @@ public class OpenListener extends Action {
 						document = XmlUtils.loadXml(zis);
 					}else if(entry.getName().equals(SaveListener.BACKGROUND_IMAGE_NAME)){
 						image = ImageIO.read(zis);
-					}else if(entry.getName().endsWith(".ttf")){
+					}else if(entry.getName().substring(entry.getName().lastIndexOf(".")).equalsIgnoreCase(".ttf")){
 						if(loadFont(entry.getName(), zis)){
 							reloadFonts = true;
 						}
