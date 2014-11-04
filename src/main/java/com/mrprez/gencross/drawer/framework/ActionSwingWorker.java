@@ -35,7 +35,7 @@ public class ActionSwingWorker extends SwingWorker<Boolean, Integer> {
 				ErrorFrame.displayError(exception);
 			}
 		} catch (Exception e) {
-			ErrorFrame.displayError(exception);
+			ErrorFrame.displayError(e);
 		}
 		SwingUtilities.updateComponentTreeUI(Drawer.getInstance());
 	}
