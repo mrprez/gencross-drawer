@@ -31,7 +31,7 @@ public class DrawedElement implements Cloneable {
 	@Override
 	public DrawedElement clone() throws CloneNotSupportedException {
 		DrawedElement clone = new DrawedElement();
-		clone.setAngle(angle);
+		clone.angle = angle;
 		clone.setColor(new Color(color.getRGB()));
 		clone.setFont(font);
 		clone.setPropertyName(propertyName);
